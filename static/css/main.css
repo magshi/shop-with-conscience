@@ -37,6 +37,13 @@
     font-size: 20px;
 }
 
+.b {
+    font-weight: bold;
+}
+
+.conscience {
+    text-align: right;
+}
 
 .extra {
     display: none;
@@ -62,4 +69,26 @@
 .searchBar {
     background: #B2E6FF;
     text-align: center;
+}
+
+.explanation {
+    font-size: 12px;
+    margin-left: 150px;
+    margin-bottom: 50px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+a:visted {
+    text-decoration: none;
 }
