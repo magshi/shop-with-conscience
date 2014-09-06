@@ -4,13 +4,14 @@ import requests
 import os
 from werkzeug.contrib.cache import SimpleCache
 from pprint import pprint
+import re
 
 cache = SimpleCache()
 app = Flask(__name__)
 
 from example import example
 
-goodguide_data = {
+goodguide_ratings = {
 	'Patagonia': {
 		'health': None,
 		'environment': 8.9,
@@ -101,13 +102,9 @@ def search():
 
 	search_data = product_data
 
-	# for product_id, product_details in product_data.iteritems():
-	# 	for stuff, other_stuff in product_details.iteritems():
-	# 		for item in other_stuff:
-	# 			product_data[product_id] = {'name': item[u'productDetails'][u'summary'][u'name'],
-	# 										'price': item[u'productDetails'][u'summary'],
-	# 										'url': item[u'productDetails'][u'summary'][u'productURL']
-	# 										}
+	for product in search_data:
+		product_name = product['summary']['name']
+		brand_name = 
 
 	return render_template("index.html", products = search_data)
 
