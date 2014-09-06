@@ -10,9 +10,9 @@
 .img {
     display: inline-block;
     position: relative;
-    height: 200px;
-    width: 200px;
-    border: 1px solid black;
+    height: 225px;
+    width: 225px;
+    border: 1px solid #F0F0F0;
     margin-bottom: 10px;
     margin-right: 10px;
     font-size: 12px;
