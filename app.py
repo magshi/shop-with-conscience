@@ -82,10 +82,12 @@ search_data = [
 
 @app.route('/')
 def index():
-	return render_template("index.html", products=search_data)
+	return render_template("index.html")
 
 @app.route('/search')
 def search():
+	# request.form['search']
+
 	# user searches for a product, i.e., 'sweater' or 'hat'
 	# make a call to the Macy's API and return a certain number of results for the query
 	# for each of the products returned, refer to the goodguide_data dictionary and retrieve that company/brand's scores (health, environment, society) + the average of those scores, and append it to the page alongside the results
