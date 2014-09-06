@@ -8,6 +8,8 @@ from pprint import pprint
 cache = SimpleCache()
 app = Flask(__name__)
 
+from example import example
+
 goodguide_data = {
 	'Patagonia': {
 		'health': None,
@@ -70,10 +72,16 @@ goodguide_data = {
 		'average': 5.6
 	}
 }
- 
+
+search_data = [
+	example['product'][0],
+	example['product'][0],
+	example['product'][0]
+]
+
 @app.route('/')
 def index():
-	return render_template("index.html")
+	return render_template("index.html", products=search_data)
 
 @app.route('/search')
 def search():
