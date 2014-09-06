@@ -1,6 +1,7 @@
 .filter {
     border: 1px solid black;
     padding: 10px;
+    font-size: 12px;
 }
 
 .products {
@@ -56,4 +57,13 @@
     display: block;
     position: absolute;
     
+}
+
+.searchArea {
+    background-color: #B2E6FF;
+}
+
+.searchBar {
+    background: #B2E6FF;
+    text-align: center;
 }
