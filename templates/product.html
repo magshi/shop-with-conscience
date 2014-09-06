@@ -18,9 +18,11 @@
             <img src="{{product.image[0].imageurl}}"/><br />
             Price: ${{product.price.regular.value}}<br />
             Conscience score:<Br />
-            Avg: 1.2 &nbsp; Social: 1.2 &nbsp; Environment: 0.6 &nbsp;  Health: 2.3
+            <div class="avg">Average: <span class="score">1.2</span>
+                <div class="extra">Social: 1.2 Environment: 0.6  Health: 2.3</div>
+            </div> 
             <br />
-            <a href="{{product.summary.producturl}}"><div class="buy">Buy me now!</div></a>
+            <a href="{{product.summary.producturl}}"><div class="buy">Buy</div></a>
         </div>
-		</br>
+	
 
