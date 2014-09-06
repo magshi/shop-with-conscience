@@ -11,6 +11,7 @@
 		Product onsale: {{product.summary.onsale}}
 		</br>
 		Product image: <img src="{{product.image[0].imageurl}}"/>
+		Product buyurl: <a href="{{product.summary.producturl}}">Buy it now</a>
 		</br>-->
 
         <div class="img"><a href="#"></a>
@@ -19,7 +20,7 @@
             Conscience score:<Br />
             Avg: 1.2 &nbsp; Social: 1.2 &nbsp; Environment: 0.6 &nbsp;  Health: 2.3
             <br />
-            <a href="#"><div class="buy">Buy me now!</div></a>
+            <a href="{{product.summary.producturl}}"><div class="buy">Buy me now!</div></a>
         </div>
 		</br>
-		Product buyurl: <a href="{{product.summary.producturl}}">Buy it now</a>
+
