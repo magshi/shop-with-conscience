@@ -102,9 +102,12 @@ def search():
 
 	search_data = product_data
 
-	for product in search_data:
+	for index, product in enumerate(search_data):
 		product_name = product['summary']['name']
-		brand_name = 
+		for brand, scores in goodguide_ratings.iteritems():	
+			brand_match = re.search(brand, product_name)
+			if brand_match:
+				search_data[index]['scores'] = goodguide_ratings[brand_match.group()]
 
 	return render_template("index.html", products = search_data)
 
