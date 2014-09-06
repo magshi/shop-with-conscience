@@ -92,7 +92,7 @@ def search():
 	# make a call to the Macy's API and return a certain number of results for the query
 	# for each of the products returned, refer to the goodguide_data dictionary and retrieve that company/brand's scores (health, environment, society) + the average of those scores, and append it to the page alongside the results
 	# display product name, brand, scores, image, price, and a link to the macy's.com product page if the user wants to buy it
-	products = [1574297, 1493858, 1493858, 1573194, 1668993, 1528466]
+	products = [1574297, 1450682, 1493858, 1521058, 1493858, 1573194, 1668993, 1528466, 1481637, 921111]
 
 	product_data = []
 
