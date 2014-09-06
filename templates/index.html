@@ -33,7 +33,7 @@
 <div class="row" id="searchResults">
     <div class="large-2 column filter">
         <h3>Sort by:</h3>
-        <h4>Cruelty Score</h4>
+        <h4>Conscience Score</h4>
         <input type="radio" name="filter1" value="Average"> Averaged Score<br />
         <input type="radio" name="filter1" value="Social"> Social Score<br />
         <input type="radio" name="filter1" value="Health"> Health Score<br />
@@ -49,52 +49,16 @@
     </div>
 
   <div class="large-10 column products">
-        <div class="img"><a href="#"></a><img src=""></a><Br />
-            <a href="#"><div class="buy">Buy me now!</div></a>
-        </div>
-        <div class="img"><a href="#"></a><img src=""></a><Br />
-            <a href="#"><div class="buy">Buy me now!</div></a>
-        </div>
-        <div class="img"><a href="#"></a><img src=""></a><Br />
-            <a href="#"><div class="buy">Buy me now!</div></a>
-        </div>
-        <div class="img"><a href="#"></a><img src=""></a><Br />
-            <a href="#"><div class="buy">Buy me now!</div></a>
-        </div> <br />
+      
+	{% for product in products recursive %}
+		{%include "product.html"%}
+	{%endfor%}
 
-        <div class="img"><a href="#"></a><img src=""></a><Br />
-            <a href="#"><div class="buy">Buy me now!</div></a>
-        </div>
-        <div class="img"><a href="#"></a><img src=""></a><Br />
-            <a href="#"><div class="buy">Buy me now!</div></a>
-        </div>
-        <div class="img"><a href="#"></a><img src=""></a><Br />
-            <a href="#"><div class="buy">Buy me now!</div></a>
-        </div>
-        <div class="img"><a href="#"></a><img src=""></a><Br />
-            <a href="#"><div class="buy">Buy me now!</div></a>
-        </div> <br />
-
-        <div class="img"><a href="#"></a><img src=""></a><Br />
-            <a href="#"><div class="buy">Buy me now!</div></a>
-        </div>
-        <div class="img"><a href="#"></a><img src=""></a><Br />
-            <a href="#"><div class="buy">Buy me now!</div></a>
-        </div>
-        <div class="img"><a href="#"></a><img src=""></a><Br />
-            <a href="#"><div class="buy">Buy me now!</div></a>
-        </div>
-        <div class="img"><a href="#"></a><img src=""></a><Br />
-            <a href="#"><div class="buy">Buy me now!</div></a>
-        </div> <br />
 
   </div>
 </div>
 
 
-	{% for product in products recursive %}
-		{%include "product.html"%}
-	{%endfor%}
     <script src="/static/js/vendor/jquery.js"></script>
     <script src="/static/js/foundation.min.js"></script>
     <script>

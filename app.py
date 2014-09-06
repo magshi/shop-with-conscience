@@ -18,7 +18,7 @@ goodguide_data = {
 search_data = [
 	example['product'][0],
 	example['product'][0],
-	example['product'][0]
+	example['product'][0],
 ]
 
 @app.route('/')
