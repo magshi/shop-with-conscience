@@ -2,7 +2,9 @@
 <!--
 		Product name: {{product.summary.name}}
 		</br>
-		Product price: {{product.price.regular.value}}
+		{% if product.price.regular %}
+			Product price: {{product.price.regular.value}}
+		{% endif %}
 		</br>
 		Product description: {{product.summary.description}}
 		</br>
@@ -19,3 +21,5 @@
             <br />
             <a href="#"><div class="buy">Buy me now!</div></a>
         </div>
+		</br>
+		Product buyurl: <a href="{{product.summary.producturl}}">Buy it now</a>
