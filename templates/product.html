@@ -1,7 +1,9 @@
 
 		Product name: {{product.summary.name}}
 		</br>
-		Product price: {{product.price.regular.value}}
+		{% if product.price.regular %}
+			Product price: {{product.price.regular.value}}
+		{% endif %}
 		</br>
 		Product description: {{product.summary.description}}
 		</br>

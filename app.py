@@ -109,7 +109,7 @@ def search():
 	# 										'url': item[u'productDetails'][u'summary'][u'productURL']
 	# 										}
 
-	return render_template("index.html", results = search_data)
+	return render_template("index.html", products = search_data)
 
 if __name__ == '__main__':
 	app.run(debug=True)
