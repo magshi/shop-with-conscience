@@ -2,6 +2,8 @@ from flask import Flask, request, render_template, g, redirect, url_for, flash
 from jinja2 import Template
 app = Flask(__name__)
 
+from example import example
+
 goodguide_data = {
 	'Patagonia': {
 		'environment': 8.9,
@@ -10,10 +12,20 @@ goodguide_data = {
 	'nike': {},
 	'dockers': {},
 }
+
+example_product = {
+	'name': 'swater',
+	'price': '25.99',
+	'color': 'red'
+}
  
 @app.route('/')
 def index():
 	return render_template("index.html")
+
+@app.route('/product')
+def product():
+	return render_template("product.html", product = example['product'][0])
 
 def search():
 	# user searches for a product, i.e., 'sweater' or 'hat'
