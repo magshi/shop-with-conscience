@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shop with a Conscience</title>
     <link rel="stylesheet" href="/static/css/foundation.css" />
+    <link rel="stylesheet" href="/static/css/main.css" />
     <script src="/static/js/vendor/modernizr.js"></script>
   </head>
   <body>
@@ -21,16 +22,43 @@
 	        <h3>Search for a product on Macy's.com and find out the company's reputation on GoodGuide.org for fair labor practices.</h3>
 	        <div class="row">
               <div class="large-12 columns">
-              <input type="text" placeholder="What are you looking for?" />
-              <a href="#" class="medium success button">Click me!</a><br/> 
-            </div>
-          {{results}}
+                  <input type="text" placeholder="Enter a product and store, if desired.">
+                  <input type="submit" name="search" value="Search" id="searchBtn">
+              </div>
+            </div>  
       	</div>
       </div>
     </div>
+      
+<div class="row" id="searchResults">
+    <div class="large-2 column filter">
+        <h3>Sort by:</h3>
+        <h4>Conscience Score</h4>
+        <input type="radio" name="filter1" value="Average"> Averaged Score<br />
+        <input type="radio" name="filter1" value="Social"> Social Score<br />
+        <input type="radio" name="filter1" value="Health"> Health Score<br />
+        <input type="radio" name="filter1" value="Environmental"> Environmental Score<br /><br />
+
+        <h3>Brand</h3>
+        <input type="checkbox" name="filter2" value="featured"> Featured<br />
+        <input type="checkbox" name="filter2" value="brand1"> Brand 1<br />
+        <input type="checkbox" name="filter2" value="brand2"> Brand 2<br />
+        <input type="checkbox" name="filter2" value="brand3"> Brand 3<br />
+        <input type="checkbox" name="filter2" value="brand4"> Brand 4<br />
+        <input type="checkbox" name="filter2" value="brand5"> Brand 5<br />
+    </div>
+
+  <div class="large-10 column products">
+      
 	{% for product in products recursive %}
 		{%include "product.html"%}
 	{%endfor%}
+
+
+  </div>
+</div>
+
+
     <script src="/static/js/vendor/jquery.js"></script>
     <script src="/static/js/foundation.min.js"></script>
     <script>
