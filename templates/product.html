@@ -21,9 +21,11 @@
 			<br />
 			{% endif %}
             Conscience score:<Br />
-            Avg: {{product.scores.average}} &nbsp; Social: {{product.scores.social}} &nbsp; Environment: {{product.scores.environment}} &nbsp;  Health: {{product.scores.health}}
+            <div class="avg">Average: <span class="score">{{product.scores.average}}</span>
+                <div class="extra">Social: {{product.scores.social}} Environment: {{product.scores.environment}}  Health: {{product.scores.health}}</div>
+            </div> 
             <br />
-            <a href="{{product.summary.producturl}}"><div class="buy">Buy me now!</div></a>
+            <a href="{{product.summary.producturl}}"><div class="buy">Buy</div></a>
         </div>
-		</br>
+	
 
