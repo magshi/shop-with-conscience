@@ -47,6 +47,12 @@ example = {
             "shippingfee": 0.0,
             "pricetype": "Ticket",
             "pricetypeid": 0
+        },
+        "scores": {
+            'health': None,
+            'environment': 8.9,
+            'society': 7.6,
+            'average': 6.9
         }
 	}]
 }
