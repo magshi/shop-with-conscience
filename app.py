@@ -15,19 +15,15 @@ goodguide_data = {
 	'dockers': {},
 }
 
-example_product = {
-	'name': 'swater',
-	'price': '25.99',
-	'color': 'red'
-}
- 
+search_data = [
+	example['product'][0],
+	example['product'][0],
+	example['product'][0]
+]
+
 @app.route('/')
 def index():
-	return render_template("index.html")
-
-@app.route('/product')
-def product():
-	return render_template("product.html", product = example['product'][0])
+	return render_template("index.html", products=search_data)
 
 @app.route('/search')
 def search():
