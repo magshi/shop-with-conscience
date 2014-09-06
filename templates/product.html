@@ -1,31 +1,13 @@
-
-
-<!-- 		Product name: {{product.summary.name}}
-		</br>
-		{% if product.price.regular %}
-			Product price: {{product.price.regular.value}}
-		{% endif %}
-		</br>
-		Product description: {{product.summary.description}}
-		</br>
-		Product onsale: {{product.summary.onsale}}
-		</br>
-		Product image: <img src="{{product.image[0].imageurl}}"/>
-		Product buyurl: <a href="{{product.summary.producturl}}">Buy it now</a>
-		</br> -->
-
         <div class="img"><a href="#"></a>
             <img src="{{product.image[0].imageurl}}"/><br />
             {% if product.price.regular %}
-			Price: ${{product.price.regular.value}}
-			<br />
+				Price: ${{product.price.regular.value}}
 			{% endif %}
-            Conscience score:<Br />
-            <div class="avg">Average: <span class="score">{{product.scores.average}}</span>
+			<div><strong>Brand</strong>: {{product.brand}}</div>
+            <div><strong>Conscience Score</strong>:</div>
+            <div class="avg"><span class="score">{{product.scores.average}} (Average)</span>
                 <div class="extra">Society: {{product.scores.society}} Environment: {{product.scores.environment}}  Health: {{product.scores.health}}</div>
             </div> 
             <br />
             <a href="{{product.summary.producturl}}"><div class="buy">Buy</div></a>
         </div>
-	
-
