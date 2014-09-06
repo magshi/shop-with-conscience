@@ -22,20 +22,22 @@
 	        <h3>   </h3>
 	        <div class="row">
               <div class="large-12 columns">
-                  <input type="text" class="searchBar" placeholder="Enter a product and store, if desired.">
+                  Shop for products based on Conscience Scores!  <br /><br />
+                  <input type="text" class="searchBar" placeholder="Enter a product">
                   <input type="submit" name="search" value="Search" id="searchBtn">
+                    <div class="conscience">What are Conscience Scores?*</div>
+                  </div>
               </div>
             </div>  
       	</div>
       </div>
-    </div>
       
 <div class="row" id="searchResults">
     <div class="large-2 column filter">
         <h3>Sort by:</h3>
         <h4>Conscience Score</h4>
         <input type="radio" name="filter1" value="Average"> Average Score<br />
-        <input type="radio" name="filter1" value="Social"> Society Score<br />
+        <input type="radio" name="filter1" value="Social"> Social Score<br />
         <input type="radio" name="filter1" value="Health"> Health Score<br />
         <input type="radio" name="filter1" value="Environmental"> Environmental Score<br /><br />
 
@@ -53,6 +55,14 @@
 
   </div>
 </div>
+      <div class="explanation">
+          * These scores are based on <a href="http://www.goodguide.com/">GoodGuide</a>. The higher the score, the more ethical the product!<br />
+      <span class="b">Social:</span> Impact on community and workers. <br />
+      <span class="b">Environmental:</span> Impact on resources and our planet.<br />
+      <span class="b">Health:</span> Impact on our bodies and overall health.<br />
+      <span class="b">Average:</span> The average between the social, environmental, and health scores.<br />
+      </div>
+        
 
 
     <script src="/static/js/vendor/jquery.js"></script>
