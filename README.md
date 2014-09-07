@@ -15,4 +15,4 @@ Shop with a Conscience was built at GDI SF's NeoHack14 event at Hack Reactor. Th
 * [Monse Hernandez](http://www.twitter.com/mMonseHernandez)
 * [Maggie Shine](http://www.twitter.com/magksh)
 * [Briane](https://twitter.com/bchanellek)
-* With mentoring from [Dan Vinegar](http://www.twitter.com/bentlegen), am I forgetting anybody?!
+* With mentoring from [Ben Vinegar](http://www.twitter.com/bentlegen), am I forgetting anybody?!
