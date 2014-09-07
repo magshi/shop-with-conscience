@@ -1,6 +1,6 @@
 Shop with a Conscience
 ====================
-(/path/to/img.png "Shop with a Conscience")
+(/img/swc-screenshot.png "Shop with a Conscience")
 This application uses the [Macy's.com API](http://developer.macys.com) and data from [http://www.goodguide.com](GoodGuide.com) to display a brand's "Conscience Score" when you're thinking about making a purchase.
 
 The team
