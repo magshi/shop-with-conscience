@@ -6,7 +6,7 @@ This application uses the [Macy's.com API](http://developer.macys.com) and data 
 
 The team
 --------------------
-Shop with a Conscience was built at [GDI SF's NeoHack14](http://bit.ly/neoHack) event at Hack Reactor. The team includes:
+Shop with a Conscience was built at [GDI SF's neoHack14](http://bit.ly/neoHack) event at Hack Reactor. The team includes:
 
 * [Sumaiya Talukdar](http://twitter.com/stalukda)
 * [Celia Deeter](https://twitter.com/celiadeeter)
