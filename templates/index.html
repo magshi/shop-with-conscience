@@ -21,13 +21,15 @@
       	<div class="panel">
 	        <div class="row">
               <div class="large-12 columns">
-                  Shop for products based on Conscience Scores!  <br /><br />
+                <form action="/search">
+                  Shop for products based on Conscience Scores!<br /><br />
                   <input type="text" class="searchBar" placeholder="Enter a product">
                   <input type="submit" name="search" value="Search" id="searchBtn">
                     <div class="conscience">What are Conscience Scores?*</div>
                   </div>
               </div>
             </div>  
+          </form>
       	</div>
       </div>
       
@@ -46,16 +48,16 @@
     </div>
 
   <div class="large-10 column products">
-          <div class="explanation">
+	{% for product in products recursive %}
+		{% include "product.html"%}
+	{% endfor %}
+        <div class="explanation">
           * These scores are based on <a href="http://www.goodguide.com/">GoodGuide</a>. The higher the score, the more ethical the product!<br />
       <span class="b">Social:</span> Impact on community and workers. <br />
       <span class="b">Environmental:</span> Impact on resources and our planet.<br />
       <span class="b">Health:</span> Impact on our bodies and overall health.<br />
       <span class="b">Average:</span> The average between the social, environmental, and health scores.<br />
       </div>
-	{% for product in products recursive %}
-		{% include "product.html"%}
-	{% endfor %}
   </div>
 </div>
         
